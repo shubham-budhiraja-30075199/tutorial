@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Welcome from "./components/Welcome";
+import Hello from "./components/Hello";
+import LearnJSX from "./components/LearnJSX";
+import NoJSX from "./components/NoJSX";
+import Propsintro from "./components/Propsintro";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container">
+        <h1>Tutorial Notes</h1>
+        <Hello />
+        <Welcome />
+        <LearnJSX />
+        <NoJSX />
+        <Propsintro name="Shubham Budhiraja" company="ADL">
+          This text is the child of Propsintro (check App.js) and is called in JSX using <strong>props.children</strong>.
+        </Propsintro>
+      </div>
+    </>
   );
 }
 
