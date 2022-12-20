@@ -1,6 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const Hello = () => {
+    const [count, setCount] = useState(0)
+    
+    const updateCount = () =>{
+        let c = count;
+        c += 1;
+        setCount(c);
+    }
     return(
         <>
             <h3>Function Based Components</h3>
@@ -12,6 +19,7 @@ const Hello = () => {
                     us to use any name for the object while importing and calling the component. If we don't use the keyword 
                     then to import the component, we will have to use the function name used in the component enclosed 
                     in curly braces. ex: <strong>import {"{ Hello }"} from "./components/Hello"</strong></li>
+                <li><span onClick={updateCount}>Click</span>: {count}</li>
             </ul>
         </>
     )

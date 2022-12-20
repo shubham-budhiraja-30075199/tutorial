@@ -1,8 +1,7 @@
 import React from "react";
 
 const Propsintro = (props) => {
-  console.log(props);
-  return (
+   return (
     <>
       <h3>Props</h3>
       <ul>
