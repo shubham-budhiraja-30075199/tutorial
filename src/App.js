@@ -7,6 +7,7 @@ import Propsintro from "./components/Propsintro";
 import Message from "./components/Message";
 import DestructuringPropsandState from "./components/DestructuringPropsandState";
 import Functionclick from "./components/Functionclick";
+import ConditionalRen from "./components/ConditionalRen";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Message />
         <DestructuringPropsandState name="Shubham Budhiraja" company="ADL"  />
         <Functionclick />
+        <ConditionalRen />
       </div>
     </>
   );
